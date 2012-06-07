@@ -1,4 +1,5 @@
 Cordella's Useful Scripts
 =========================
 
-Scripts
+Functioning scripts for performing repetitive or dense operations.
+
