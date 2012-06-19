@@ -1,15 +1,16 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python
 from re import findall
-from sys import argv, exit
-from urllib.parse import unquote
+from sys import version_info, argv, exit
+if (version_info[0] <= 2):
+    from urllib import unquote
+else:
+    from urllib.parse import unquote
 
 try:
-    url = findall('(?iu)https?%3A%2F%2F.*?(?=&|\\Z|\\s)', argv[1])[0]
+    url = findall('(?iu)https?%3A%2F%2F.*?(?=&|\\Z|\\s|\\?)', argv[1])[0]
 except IndexError:
     print('incompatible entry')
     exit()
 
-url = unquote(url)
-
-print(url)
+print(unquote(url))
 
