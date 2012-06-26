@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python
 #
 # Version-agnostic transcoder for text files.
 from sys import version_info, stdin, stdout, stderr, exit
