@@ -30,7 +30,7 @@ if __name__ == '__main__':
     """ Implements the above transcode function as a fully functional command line program. """
     import argparse
     from chardet import detect
-    from os.path import expanduser, exists, isfile, isdir
+    from os.path import expanduser, isfile, isdir
 
     if version_info[0] == 3:
         stdin_input = stdin.buffer.read
