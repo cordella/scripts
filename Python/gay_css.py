@@ -5,7 +5,7 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--offset', dest='offset', type=int, default=0, help='offset the first colour of the rainbow')
-    parser.add_argument('-w', '--word', action='store_true', dest='use_word', help='offset the first colour of the rainbow')
+    parser.add_argument('-w', '--word', action='store_true', dest='use_word', help='use per-word mode')
     parser.add_argument('text', help='the text to rainbow')
 
     return parser.parse_args()
