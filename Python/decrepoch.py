@@ -9,5 +9,5 @@ import time
 values = sys.argv[1:]
 
 for value in values:
-    print(value + " --> " + datetime.datetime.fromtimestamp(float(value)).strftime("%Y-%d-%m %H:%M:%S"))
+    print(value + " --> " + datetime.datetime.fromtimestamp(float(value)).strftime("%Y-%m-%d %H:%M:%S"))
 
